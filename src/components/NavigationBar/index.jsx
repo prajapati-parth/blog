@@ -1,10 +1,10 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import './style.scss';
+import React from 'react'
+import Link from 'gatsby-link'
+import './style.scss'
 
 class NavigationBar extends React.Component {
   render() {
-    const { location, title } = this.props;
+    const { location, title } = this.props
 
     return (
       <nav className="navbar navbar-expand flex-column flex-md-row">
@@ -43,4 +43,4 @@ class NavigationBar extends React.Component {
   }
 }
 
-export default NavigationBar;
+export default NavigationBar
