@@ -10,7 +10,7 @@ class Adsense extends React.Component {
   }
 
   render() {
-    const { clientId, slotId, format } = this.props;
+    const { clientId, slotId, format } = this.props
 
     return clientId ? (
       <div className="ad">
