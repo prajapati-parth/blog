@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
 import SitePost from '../components/SitePost'
-import './style.scss';
+import './style.scss'
 
 class BlogIndex extends React.Component {
   render() {
@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
     })
 
     return (
-      <div className='blogIndex'>
+      <div className="blogIndex">
         <Helmet
           title={get(site, 'title')}
           meta={[
@@ -77,7 +77,7 @@ export const pageQuery = graphql`
             title
             path
             categories
-            date(formatString: "YYYY/MM/DD")
+            date(formatString: "DD MMM, YYYY")
           }
         }
       }

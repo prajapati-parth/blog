@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "Parth Prajapati <parth17prajapati@gmail.com>",
   "dependencies": {
-    "eureka-ui": "github:prajapati-parth/eureka-ui#0.0.6",
+    "eureka-ui": "github:prajapati-parth/eureka-ui#0.0.7",
     "gatsby": "^1.9.130",
     "gatsby-image": "^1.0.51",
     "gatsby-link": "^1.6.31",

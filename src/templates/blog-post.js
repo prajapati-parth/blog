@@ -1,23 +1,23 @@
-import React from 'react';
-import get from 'lodash/get';
-import Helmet from 'react-helmet';
+import React from 'react'
+import get from 'lodash/get'
+import Helmet from 'react-helmet'
 
-import SitePost from '../components/SitePost';
-import SitePage from '../components/SitePage';
+import SitePost from '../components/SitePost'
+import SitePage from '../components/SitePage'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = get(this, 'props.data.post');
-    const site = get(this, 'props.data.site');
-    const layout = get(post, 'frontmatter.layout');
-    const title = get(post, 'frontmatter.title');
-    const siteTitle = get(site, 'meta.title');
+    const post = get(this, 'props.data.post')
+    const site = get(this, 'props.data.site')
+    const layout = get(post, 'frontmatter.layout')
+    const title = get(post, 'frontmatter.title')
+    const siteTitle = get(site, 'meta.title')
 
-    let template = '';
-    if (layout != 'page') {
-      template = <SitePost data={post} site={site} isIndex={false} />
-    } else {
+    let template = ''
+    if (layout === 'post') {
       template = <SitePage {...this.props} />
+    } else {
+      template = <SitePost data={post} site={site} isIndex={false} />
     }
     return (
       <div>

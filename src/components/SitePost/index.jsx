@@ -1,61 +1,20 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import forEach from 'lodash/forEach'
+import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
-import size from 'lodash/size'
 import Adsense from '../Adsense'
+
+import { Card } from 'eureka-ui'
 import ReadNext from '../ReadNext'
 import './style.scss'
-import {Card} from 'eureka-ui';
 
 class SitePost extends React.Component {
-  more(path) {
-    return (
-      <Link className="readmore" to={path}>
-        <span className="btn btn-outline-primary btn-block">MORE</span>
-      </Link>
-    )
-  }
-
-  isMore(body) {
-    return body.match('<!--more-->')
-  }
-
-  description(body) {
-    let test = body.replace(/<blockquote>/g, '<blockquote class="blockquote">')
-    if (test.match('<!--more-->')) {
-      test = test.split('<!--more-->')
-      if (typeof test[0] !== 'undefined') {
-        return test[0]
-      }
-    }
-    return test
-  }
-
-  categories(data) {
-    const categories = []
-    forEach(data, (item, i) => {
-      categories.push(
-        <span className="badge badge-primary text-white" key={i}>
-          {item}
-        </span>
-      )
-    })
-    return categories
-  }
-
   render() {
     const { site, data, isIndex } = this.props
+    console.log(isIndex)
     const title = get(data, 'frontmatter.title')
     const path = get(data, 'frontmatter.path')
     const date = get(data, 'frontmatter.date')
-    const html = get(data, 'html')
-    const excerpt = get(data, 'excerpt');
-    const description =
-      get(data, 'frontmatter.description') || this.description(html)
-    const cate =
-      get(data, 'frontmatter.category') || get(data, 'frontmatter.categories')
-    const isMore = isIndex && !!html.match('<!--more-->')
+    const excerpt = get(data, 'excerpt')
     const ad = isIndex ? (
       ''
     ) : (
@@ -65,18 +24,16 @@ class SitePost extends React.Component {
     return (
       <div className="container">
         <div className="articles col-md-12">
-          <Card title={title} theme='blueGradient' body={excerpt} categories={data.frontmatter.categories} />
-          <div className="article-wrap" key={path}>
-            <div className="page-header">
-              <Link style={{ boxShadow: 'none' }} to={path}>
-                <time dateTime={date}>{date}</time>
-              </Link>
-            </div>
-            {ad}
-            {isMore ? this.more(path) : ''}
-            {ad}
-            {isIndex ? '' : <ReadNext data={site} />}
-          </div>
+          <Card
+            title={title}
+            theme="blueGradient"
+            body={excerpt}
+            categories={data.frontmatter.categories}
+            timeStamp={date}
+            click={() => navigateTo(path)}
+          />
+          {ad}
+          {isIndex ? '' : <ReadNext data={site} />}
         </div>
       </div>
     )
