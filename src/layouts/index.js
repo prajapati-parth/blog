@@ -19,7 +19,7 @@ class Template extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{height: '100%'}}>
         <NavigationBar title={siteMetadata.title} {...this.props} />
         {this.props.children()}
       </div>

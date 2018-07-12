@@ -1,13 +1,14 @@
-import get from 'lodash/get'
-import React from 'react'
-import Helmet from 'react-helmet'
-import { siteMetadata } from '../../../gatsby-config'
+import React from 'react';
+import Helmet from 'react-helmet';
+import get from 'lodash/get';
+
+import { siteMetadata } from '../../../gatsby-config';
 
 class Profile extends React.Component {
   render() {
-    const pathPrefix =
-      process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
-    const title = 'Profile'
+    const pathPrefix = process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__;
+    const title = 'Profile';
+
     return (
       <div>
         <Helmet
@@ -38,20 +39,20 @@ class Profile extends React.Component {
           <div className="container">
             <img
               src={pathPrefix + '/img/profile.jpg'}
-              alt="jaxx2104"
+              alt="Parth Prajapati"
               className="rounded-circle mx-auto d-block"
               width="120px"
             />
-            <h1>jaxx2104</h1>
-            <p className="lead text-muted">コーラとバグが好き</p>
+            <h1>Parth Prajapati</h1>
+            <p className="lead text-muted">Curiously building great software.</p>
             <div>
               <a
                 ref="twButton"
-                href="https://twitter.com/jaxx2104"
+                href="https://twitter.com/iam_daparth"
                 className="twitter-follow-button"
                 data-show-count="false"
               >
-                Follow @jaxx2104
+                Follow @iam_daparth
               </a>
             </div>
           </div>
@@ -61,7 +62,7 @@ class Profile extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <h2 className="section-heading">SKIL</h2>
+                <h2 className="section-heading">SKILLS</h2>
                 <hr className="border-white" />
               </div>
             </div>
@@ -70,13 +71,16 @@ class Profile extends React.Component {
             <div className="row justify-content-md-center">
               <div className="col-lg-3 col-6">
                 <div
-                  className="service-box"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="HTML"
-                >
-                  <i className="devicon-html5-plain " data-emergence="hidden" />
-                </div>
+                    className="service-box"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Node.js"
+                  >
+                    <i
+                      className="devicon-nodejs-plain"
+                      data-emergence="hidden"
+                    />
+                  </div>
               </div>
               <div className="col-lg-3 col-6">
                 <div
@@ -109,9 +113,9 @@ class Profile extends React.Component {
                   className="service-box"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="Vue.js"
+                  title="AngularJS"
                 >
-                  <i className="devicon-vuejs-plain" data-emergence="hidden" />
+                  <i className="devicon-angularjs-plain" data-emergence="hidden" />
                 </div>
               </div>
             </div>
@@ -121,10 +125,10 @@ class Profile extends React.Component {
                   className="service-box"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="Node.js"
+                  title="Less"
                 >
                   <i
-                    className="devicon-nodejs-plain-wordmark"
+                    className="devicon-less-plain-wordmark"
                     data-emergence="hidden"
                   />
                 </div>
@@ -134,9 +138,9 @@ class Profile extends React.Component {
                   className="service-box"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="PHP"
+                  title="Python"
                 >
-                  <i className="devicon-php-plain" data-emergence="hidden" />
+                  <i className="devicon-python-plain" data-emergence="hidden" />
                 </div>
               </div>
               <div className="col-lg-3 col-6 ">
@@ -144,10 +148,10 @@ class Profile extends React.Component {
                   className="service-box"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="Swift"
+                  title="Photoshop"
                 >
                   <i
-                    className="devicon-swift-plain-wordmark"
+                    className="devicon-photoshop-plain"
                     data-emergence="hidden"
                   />
                 </div>
@@ -157,10 +161,10 @@ class Profile extends React.Component {
                   className="service-box"
                   data-toggle="tooltip"
                   data-placement="top"
-                  title="AWS"
+                  title="Git"
                 >
                   <i
-                    className="devicon-amazonwebservices-plain-wordmark"
+                    className="devicon-git-plain"
                     data-emergence="hidden"
                   />
                 </div>
@@ -169,7 +173,7 @@ class Profile extends React.Component {
           </div>
         </section>
 
-        <section id="features" className="text-center">
+        {/* <section id="features" className="text-center">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -273,7 +277,7 @@ class Profile extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     )
   }
