@@ -64,18 +64,6 @@ class ProfileContent extends React.Component {
                   </a>
                   <span class="badge badge-primary">react</span>
                 </li>
-                {/* <li>
-                    <a href="https://github.com/prajapati-parth/club">Club</a><Label>angular2</Label><Label>angular-material</Label>
-                </li>
-                <li>
-                    <a href="https://github.com/prajapati-parth/glitchy">Glitchy</a><Label>react</Label><Label>electron</Label>
-                </li>
-                <li>
-                    <a href="https://github.com/prajapati-parth/prajapati-parth.github.io">Code Sceptre</a><Label>react</Label><Label>github-pages</Label>
-                </li>
-                <li>
-                    <span>Jabber</span><Label>angular2</Label><Label>electron</Label>
-                </li> */}
               </ul>
             </p>
           </div>
