@@ -6,7 +6,6 @@ import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
 import SitePost from '../components/SitePost'
-import './style.scss'
 
 class BlogIndex extends React.Component {
   render() {
@@ -31,7 +30,7 @@ class BlogIndex extends React.Component {
     })
 
     return (
-      <div className="blogIndex">
+      <div>
         <Helmet
           title={get(site, 'title')}
           meta={[

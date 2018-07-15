@@ -2,6 +2,7 @@ import React from 'react'
 import emergence from 'emergence.js'
 
 import NavigationBar from '../components/NavigationBar'
+import Footer from '../components/Footer'
 import { siteMetadata } from '../../gatsby-config'
 import './gatstrap.scss'
 import 'prismjs/themes/prism-okaidia.css'
@@ -19,9 +20,10 @@ class Template extends React.Component {
 
   render() {
     return (
-      <div style={{height: '100%'}}>
+      <div>
         <NavigationBar title={siteMetadata.title} {...this.props} />
-        {this.props.children()}
+        <div className="main">{this.props.children()}</div>
+        <Footer />
       </div>
     )
   }

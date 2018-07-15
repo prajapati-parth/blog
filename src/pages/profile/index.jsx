@@ -1,13 +1,14 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import get from 'lodash/get';
+import React from 'react'
+import Helmet from 'react-helmet'
+import get from 'lodash/get'
 
-import { siteMetadata } from '../../../gatsby-config';
+import { siteMetadata } from '../../../gatsby-config'
 
 class Profile extends React.Component {
   render() {
-    const pathPrefix = process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__;
-    const title = 'Profile';
+    const pathPrefix =
+      process.env.NODE_ENV === 'development' ? '' : __PATH_PREFIX__
+    const title = 'Profile'
 
     return (
       <div>
@@ -44,7 +45,9 @@ class Profile extends React.Component {
               width="120px"
             />
             <h1>Parth Prajapati</h1>
-            <p className="lead text-muted">Curiously building great software.</p>
+            <p className="lead text-muted">
+              Curiously building great software.
+            </p>
             <div>
               <a
                 ref="twButton"
@@ -71,16 +74,13 @@ class Profile extends React.Component {
             <div className="row justify-content-md-center">
               <div className="col-lg-3 col-6">
                 <div
-                    className="service-box"
-                    data-toggle="tooltip"
-                    data-placement="top"
-                    title="Node.js"
-                  >
-                    <i
-                      className="devicon-nodejs-plain"
-                      data-emergence="hidden"
-                    />
-                  </div>
+                  className="service-box"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Node.js"
+                >
+                  <i className="devicon-nodejs-plain" data-emergence="hidden" />
+                </div>
               </div>
               <div className="col-lg-3 col-6">
                 <div
@@ -115,7 +115,10 @@ class Profile extends React.Component {
                   data-placement="top"
                   title="AngularJS"
                 >
-                  <i className="devicon-angularjs-plain" data-emergence="hidden" />
+                  <i
+                    className="devicon-angularjs-plain"
+                    data-emergence="hidden"
+                  />
                 </div>
               </div>
             </div>
@@ -163,10 +166,7 @@ class Profile extends React.Component {
                   data-placement="top"
                   title="Git"
                 >
-                  <i
-                    className="devicon-git-plain"
-                    data-emergence="hidden"
-                  />
+                  <i className="devicon-git-plain" data-emergence="hidden" />
                 </div>
               </div>
             </div>

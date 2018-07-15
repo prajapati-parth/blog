@@ -44,7 +44,6 @@ export default class HTML extends React.Component {
         <body>
           <div
             id="___gatsby"
-            style={{height: '100%'}}
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}

@@ -63,11 +63,16 @@ $link-hover-decoration: none !default;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
-html,
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  height: 100%;
+  margin-bottom: 50px;
   width: 100%;
   -webkit-font-smoothing: antialiased;
+  background-color: #f1f1f1;
 }
 
 p {
