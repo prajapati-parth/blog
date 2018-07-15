@@ -1,0 +1,22 @@
+.profileContentContainer {
+  .profileCard {
+    margin-bottom: 10px;
+  }
+
+  .work {
+    list-style: none;
+    padding-left: 0;
+
+    .workItem {
+      margin: 7px 0;
+
+      a {
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .badge {
+    margin: 0 3px;
+  }
+}

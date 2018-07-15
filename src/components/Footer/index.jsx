@@ -15,7 +15,10 @@ class Footer extends React.Component {
                 <Heart size={22} className="featherIcon" />
                 <span> using </span>
                 <span className="boldText marginedText">
-                  <a href="https://reactjs.org/">React</a> and{' '}
+                  <a href="https://reactjs.org/">React</a>
+                </span>
+                <span> and </span>
+                <span className="boldText marginedText">
                   <a href="https://www.gatsbyjs.org/">Gatsby</a>
                 </span>
                 <span> by </span>

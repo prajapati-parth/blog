@@ -8,6 +8,7 @@ import './gatstrap.scss'
 import 'prismjs/themes/prism-okaidia.css'
 import 'devicon-2.2/devicon.min.css'
 import 'font-awesome/css/font-awesome.css'
+import './styles.scss'
 
 class Template extends React.Component {
   componentDidMount() {
