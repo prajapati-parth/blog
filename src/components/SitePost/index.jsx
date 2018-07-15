@@ -10,7 +10,6 @@ import './style.scss'
 class SitePost extends React.Component {
   render() {
     const { site, data, isIndex } = this.props
-    console.log(isIndex)
     const title = get(data, 'frontmatter.title')
     const path = get(data, 'frontmatter.path')
     const date = get(data, 'frontmatter.date')
