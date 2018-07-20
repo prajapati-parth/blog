@@ -10,53 +10,42 @@ categories:
   - Webpack
 ---
 
-Creating an application from scratch has its own perks and advantages. Whilst the excitement of building from ground up is a perk, the advantages can be listed as:
-
-- Having total control over the application in terms of configuration and architecture
-- Knowing the ins and outs and every corner of it
-- Control over each and every package used
-- And of course you get to be the “Know It All” person
-
-So let’s get started creating a hello world application in [React](https://reactjs.org)
+Creating a project from ground up without using any boilerplates feels pretty much like going on an adventure in a jungle without carrying a map. So let's go ahead and create a hello world [React](https://reactjs.org) application from an empty directory to a fully functional React web application.
 
 # Initial Setup
 
-1.  Create an empty directory. Here we’ll use `hello-world`
-
-```shell
+1. Create an empty directory for your application.
+```bash
 mkdir hello-world
 ```
 
-2.  Initialize npm (make sure you have node and npm installed on your machine)
-
-```shell
+2. Quickly initiate a node project (make sure you have node and npm installed on your machine)
+```bash
 cd hello-world
 npm init -y
 ```
-
-`npm init -y` creates a `package.json` file with the default values. Just in case you need want to provide values during initialization, use `npm init` skipping `-y` option.
+Just in case you do not want the defualt initialization, use `npm init` skipping `-y` option.
 
 That’s it! You have successfully initialized npm and we are now ready to add React.
 
 # Install React and ReactDOM
 
-ReactDOM as the name indicates serves as a glue between the browser [DOM(Document Object Model)](https://www.w3.org/TR/WD-DOM/introduction.html), whereas React is so obvious that I need not explain it.
+ReactDOM will serve as a glue between the browser [DOM(Document Object Model)](https://www.w3.org/TR/WD-DOM/introduction.html) and our React application.
 
 Let’s go ahead and install React and ReactDOM.
 
-```shell
+```bash
 npm install react react-dom --save
 ```
-
-Next let’s setup [Babel](https://babeljs.io) so that browsers can understand JavaScript’s ES6 syntax and the man of the hour, React!
+Next, let’s install and setup [Babel](https://babeljs.io) so that browsers can understand the JavaScript’s ES6 syntax that we'll be using in our application. It is not mandatory to use React with ES6 or further versions of JavaScript, React application can also be configured to use ES5 version.
 
 # Install and configure Babel
 
-Babel is a JavaScript transpiler that transpile ES6 and higher versions of JavaScript and React’s JSX to browser understandable JavaScript.
+Babel is a JavaScript transpiler that will transpile ES6 and higher versions of JavaScript and React’s JSX to browser understandable JavaScript.
 
 Install babel and configuration packages:
 
-```shell
+```bash
 npm install babel-core babel-loader babel-preset-env babel-preset-react --save-dev
 ```
 
@@ -67,21 +56,23 @@ Okay some explanation here:
 3.  `babel-preset-env` - Babel preset used to transpile ES6 and higher version to ES5.
 4.  `babel-preset-react` - Adds support for JSX.
 
+Now let's add webpack to your application, which would help us bundle all the modularized code into a single JavaScript file.
+
 # Install and configure Webpack
 
 Webpack is a module bundler. Webpack is a build tool that puts all your files including JS, CSS, images, fonts, JSON, etc into a dependency tree. It allows you to use `require()` and `import` in your code to make it more modularised.
 
 Let’s put that too in!
 
-```shell
+```bash
 npm install webpack --save-dev
 ```
 
 Now create a webpack configuration file `webpack.config.js` in the root for project.
 
 ```js
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -121,7 +112,7 @@ module.exports = {
       },
     }),
   ],
-}
+};
 ```
 
 After these steps your `package.json` should look something like this
@@ -147,11 +138,12 @@ After these steps your `package.json` should look something like this
 }
 ```
 
-Phew! Enough of configuration. Now let’s get into some actual code for project `hello-world`.
+Phew! Enough of configuration. Now let’s get into some actual code for our application.
 
 # Create index.html and React components
 
-Create an `index.html` file in the root of your project directory, where we’ll dump our React component code.
+Create an `index.html` file in the root of your project directory having a div with id `root` where our React code would be rendered.
+Notice how we added a script tag before closing body. This script tag references to the bundle that will be created by webpack.
 
 ```html
 <!doctype html>
@@ -160,10 +152,6 @@ Create an `index.html` file in the root of your project directory, where we’ll
    <title>Hello World</title>
  </head>
    <body>
-     <noscript>
-       You need to enable JavaScript to run this app.
-     </noscript>
-
      <div id="root"></div>
 
      <script src="./dist/bundle.min.js" type="text/javascript"></script>
@@ -174,14 +162,14 @@ Create an `index.html` file in the root of your project directory, where we’ll
 Create a `src` directory in the root and place `index.js` file in it which will consist of, finally, our React component.
 
 ```jsx
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 const App = () => {
   return <h3>Hello World!</h3>
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 And we are done!
@@ -198,7 +186,7 @@ As a final step let’s add a script to `package.json` to run our build and gene
 
 To generate build run the following command:
 
-```shell
+```bash
 npm run build
 ```
 
