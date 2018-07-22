@@ -1,3 +1,3 @@
 export default {
-  gaId: 'UA-111782126-2',
+  gaId: 'UA-111782126-1',
 }
