@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Parth Prajapati',
     description: 'The personal blog of Parth Prajapati',
-    siteUrl: 'https://prajapati-parth.github.io',
+    siteUrl: 'https://parth.netlify.com',
     author: 'Parth Prajapati',
     twitter: 'iam_daparth',
     adsense: '',
@@ -46,7 +46,7 @@ module.exports = {
         name: 'Parth Prajapati',
         short_name: 'Parth',
         description: 'The personal blog of Parth Prajapati',
-        homepage_url: 'https://prajapati-parth.github.io',
+        homepage_url: 'https://parth.netlify.com',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#0EB9AF',
