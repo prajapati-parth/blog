@@ -1,12 +1,12 @@
 import React from 'react'
 import get from 'lodash/get'
 
+import withGaTracker from '../../hocs/withGaTracker'
 import './style.scss'
 
 class SitePage extends React.Component {
   render() {
     console.log(this.props)
-    const post = this.props.data.post
     const { data } = this.props
     return (
       <div className="post-container">
@@ -24,4 +24,4 @@ class SitePage extends React.Component {
   }
 }
 
-export default SitePage
+export default withGaTracker(SitePage)

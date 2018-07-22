@@ -4,6 +4,7 @@ import emergence from 'emergence.js'
 import NavigationBar from '../components/NavigationBar'
 import Footer from '../components/Footer'
 import { siteMetadata } from '../../gatsby-config'
+import withGaTracker from '../hocs/withGaTracker'
 import './gatstrap.scss'
 import 'prismjs/themes/prism-okaidia.css'
 import 'devicon-2.2/devicon.min.css'
@@ -30,4 +31,4 @@ class Template extends React.Component {
   }
 }
 
-export default Template
+export default withGaTracker(Template)

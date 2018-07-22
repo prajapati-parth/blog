@@ -1,9 +1,15 @@
 import React from 'react'
 import { MapPin, Github, Linkedin, Twitter, Mail } from 'react-feather'
+import ReactGA from 'react-ga'
 
+import { gaId } from '../../utils/config'
 import './styles.scss'
 
 class ProfileSideBar extends React.Component {
+  componentDidMount() {
+    ReactGA.initialize(gaId)
+  }
+
   render() {
     return (
       <div className="aboutContainer">
@@ -17,9 +23,13 @@ class ProfileSideBar extends React.Component {
           <div className="nameContainer">
             <p className="name">Parth Prajapati</p>
             <p className="githubHandle">
-              <a target="_blank" href="https://github.com/prajapati-parth">
+              <ReactGA.OutboundLink
+                eventLabel="sidebar-github-profile-link"
+                to="https://github.com/prajapati-parth"
+                target="_blank"
+              >
                 @prajapati-parth
-              </a>
+              </ReactGA.OutboundLink>
             </p>
           </div>
         </div>
@@ -42,19 +52,24 @@ class ProfileSideBar extends React.Component {
           <div className="row">
             <div className="col-xs-12 col-sm-6">
               <p className="profileLink profileLink-github">
-                <a target="_blank" href="https://github.com/prajapati-parth">
+                <ReactGA.OutboundLink
+                  eventLabel="sidebar-social-github-profile-link"
+                  to="https://github.com/prajapati-parth"
+                  target="_blank"
+                >
                   <Github size={22} className="featherIcon" />GitHub
-                </a>
+                </ReactGA.OutboundLink>
               </p>
             </div>
             <div className="col-xs-12 col-sm-6">
               <p className="profileLink profileLink-linkedin">
-                <a
+                <ReactGA.OutboundLink
+                  eventLabel="sidebar-social-linkedin-profile-link"
+                  to="https://www.linkedin.com/in/prajapatiparth"
                   target="_blank"
-                  href="https://www.linkedin.com/in/prajapatiparth"
                 >
                   <Linkedin size={22} className="featherIcon" />LinkedIn
-                </a>
+                </ReactGA.OutboundLink>
               </p>
             </div>
           </div>
@@ -62,16 +77,23 @@ class ProfileSideBar extends React.Component {
           <div className="row">
             <div className="col-xs-12 col-sm-6">
               <p className="profileLink profileLink-twitter">
-                <a target="_blank" href="https://twitter.com/iam_daparth">
+                <ReactGA.OutboundLink
+                  eventLabel="sidebar-social-twitter-profile-link"
+                  to="https://twitter.com/iam_daparth"
+                  target="_blank"
+                >
                   <Twitter size={22} className="featherIcon" />Twitter
-                </a>
+                </ReactGA.OutboundLink>
               </p>
             </div>
             <div className="col-xs-12 col-sm-6">
               <p className="profileLink profileLink-email">
-                <a href="mailto:parth17prajapati@gmail.com">
+                <ReactGA.OutboundLink
+                  eventLabel="sidebar-social-mail-profile-link"
+                  to="mailto:parth17prajapati@gmail.com"
+                >
                   <Mail size={22} className="featherIcon" />Email
-                </a>
+                </ReactGA.OutboundLink>
               </p>
             </div>
           </div>

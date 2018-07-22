@@ -1,8 +1,15 @@
 import React from 'react'
 import { Code, Heart } from 'react-feather'
+import ReactGA from 'react-ga'
+
+import { gaId } from '../../utils/config'
 import './styles.scss'
 
 class Footer extends React.Component {
+  componentDidMount() {
+    ReactGA.initialize(gaId)
+  }
+
   render() {
     return (
       <footer className="footer">
@@ -22,12 +29,14 @@ class Footer extends React.Component {
                   <a href="https://www.gatsbyjs.org/">Gatsby</a>
                 </span>
                 <span> by </span>
-                <a
+                <ReactGA.OutboundLink
+                  eventLabel="footer-profile-link"
                   className="boldText marginedText"
-                  href="https://github.com/prajapati-parth"
+                  to="https://github.com/prajapati-parth"
+                  target="_blank"
                 >
                   Parth Prajapati
-                </a>
+                </ReactGA.OutboundLink>
               </div>
             </div>
 
@@ -37,12 +46,14 @@ class Footer extends React.Component {
                 <span> with </span>
                 <Heart size={22} className="featherIcon" />
                 <span> by </span>
-                <a
+                <ReactGA.OutboundLink
+                  eventLabel="footer-github-profile-link"
                   className="boldText marginedText"
-                  href="https://github.com/prajapati-parth"
+                  to="https://github.com/prajapati-parth"
+                  target="_blank"
                 >
                   Parth Prajapati
-                </a>
+                </ReactGA.OutboundLink>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import get from 'lodash/get'
 import { siteMetadata } from '../../../gatsby-config'
 import ProfileSideBar from '../../components/ProfileSidebar'
 import ProfileContent from '../../components/ProfileContent'
+import withGaTracker from '../../hocs/withGaTracker'
 
 class Profile extends React.Component {
   render() {
@@ -50,4 +51,4 @@ class Profile extends React.Component {
   }
 }
 
-export default Profile
+export default withGaTracker(Profile)
