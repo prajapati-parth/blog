@@ -21,19 +21,17 @@ class SitePost extends React.Component {
     )
 
     return (
-      <div className="container">
-        <div className="articles col-md-12">
-          <Card
-            title={title}
-            theme="blueGradient"
-            body={excerpt}
-            categories={data.frontmatter.categories}
-            timeStamp={date}
-            click={() => navigateTo(path)}
-          />
-          {ad}
-          {isIndex ? '' : <ReadNext data={site} />}
-        </div>
+      <div className="articles col-md-12">
+        <Card
+          title={title}
+          theme="blueGradient"
+          body={excerpt}
+          categories={data.frontmatter.categories}
+          timeStamp={date}
+          click={() => navigateTo(path)}
+        />
+        {ad}
+        {isIndex ? '' : <ReadNext data={site} />}
       </div>
     )
   }

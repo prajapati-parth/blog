@@ -24,7 +24,7 @@ class Template extends React.Component {
     return (
       <div>
         <NavigationBar title={siteMetadata.title} {...this.props} />
-        <div className="main">{this.props.children()}</div>
+        <div className="main container">{this.props.children()}</div>
         <Footer />
       </div>
     )
