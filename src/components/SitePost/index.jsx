@@ -25,11 +25,14 @@ class SitePost extends React.Component {
         <Card
           title={title}
           theme="blueGradient"
-          body={excerpt}
           categories={data.frontmatter.categories}
           timeStamp={date}
           click={() => navigateTo(path)}
-        />
+          showButton
+          buttonText='Read more'
+        >
+        {excerpt}
+        </Card>
         {ad}
         {isIndex ? '' : <ReadNext data={site} />}
       </div>
