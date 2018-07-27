@@ -21,6 +21,7 @@ class Template extends React.Component {
   }
 
   render() {
+    console.log(`using GA_ID as ${process.env.GATSBY_GA_ID}`);
     return (
       <div>
         <NavigationBar title={siteMetadata.title} {...this.props} />
