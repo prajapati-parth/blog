@@ -1,3 +1,5 @@
+const { GATSBY_GA_ID: gaId } = process.env;
+
 export default {
-  gaId: 'UA-111782126-1',
+  gaId
 }
