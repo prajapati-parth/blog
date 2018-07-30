@@ -68,7 +68,7 @@ const WorksCardBody = () => {
         <li className="workItem">
           <ReactGA.OutboundLink
             eventLabel="profile-work-item-eureka-ui"
-            to="https://prajapati-parth.github.io/eureka-ui/"
+            to="https://eurekaui.parthp.in/"
             target="_blank"
           >
             Eureka UI
