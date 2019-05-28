@@ -1,20 +1,18 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react"
 
 let stylesStr
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === `production`) {
   try {
-    stylesStr = require('!raw-loader!../public/styles.css')
+    stylesStr = require(`!raw-loader!../public/styles.css`)
   } catch (e) {
     console.log(e)
   }
 }
 
-export default class HTML extends React.Component {
+module.exports = class HTML extends React.Component {
   render() {
-    const head = Helmet.rewind()
     let css
-    if (process.env.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === `production`) {
       css = (
         <style
           id="gatsby-inlined-css"
@@ -22,32 +20,28 @@ export default class HTML extends React.Component {
         />
       )
     }
-
     return (
-      <html lang="en">
+      <html {...this.props.htmlAttributes}>
         <head>
           <meta charSet="utf-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
           {css}
-          <link
-            href="/img/apple-touch-icon.png"
-            rel="apple-touch-icon"
-            sizes="180x180"
-          />
-          <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
         </head>
-        <body>
+        <body {...this.props.bodyAttributes}>
+          {this.props.preBodyComponents}
           <div
+            key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <script dangerouslySetInnerHTML={{__html: '(window.adsbygoogle = window.adsbygoogle || []).push({});'}}></script>
         </body>
       </html>
     )
