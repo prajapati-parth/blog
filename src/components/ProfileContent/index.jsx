@@ -38,48 +38,6 @@ const AboutCardBody = () => {
   )
 };
 
-const WorksCardBody = () => {
-  return (
-    <div className='bodySection'>
-      <ul className="work">
-        <li className="workItem">
-          <ReactGA.OutboundLink
-            eventLabel="profile-work-item-gitlly"
-            to="https://prajapati-parth.github.io/gitlly/"
-            target="_blank"
-          >
-            Gitlly
-          </ReactGA.OutboundLink>
-          <span className="badge badge-primary">react</span>
-          <span className="badge badge-primary">electron</span>
-        </li>
-        <li className="workItem">
-          <ReactGA.OutboundLink
-            eventLabel="profile-work-item-minimal-react"
-            to="https://www.npmjs.com/package/minimal-react/"
-            target="_blank"
-          >
-            Minimal React
-          </ReactGA.OutboundLink>
-          <span className="badge badge-primary">node</span>
-          <span className="badge badge-primary">cli</span>
-          <span className="badge badge-primary">npm</span>
-        </li>
-        <li className="workItem">
-          <ReactGA.OutboundLink
-            eventLabel="profile-work-item-eureka-ui"
-            to="https://eurekaui.parthp.in/"
-            target="_blank"
-          >
-            Eureka UI
-          </ReactGA.OutboundLink>
-          <span className="badge badge-primary">react</span>
-        </li>
-      </ul>
-    </div>
-  )
-};
-
 class ProfileContent extends React.Component {
   componentDidMount() {
     ReactGA.initialize(gaId)
@@ -90,10 +48,6 @@ class ProfileContent extends React.Component {
       <div className="profileContentContainer">
         <Card title='About'>
           <AboutCardBody />
-        </Card>
-        
-        <Card title='Works'>
-          <WorksCardBody />
         </Card>
       </div>
     )

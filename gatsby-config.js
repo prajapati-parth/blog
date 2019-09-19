@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Parth Prajapati',
     description: 'The personal blog of Parth Prajapati',
-    siteUrl: 'https://www.parthp.in',
+    siteUrl: 'https://www.parthp.dev',
     author: 'Parth Prajapati',
     twitter: 'iam_daparth',
     adsense: '',
@@ -46,7 +46,7 @@ module.exports = {
         name: 'Parth Prajapati',
         short_name: 'Parth',
         description: 'The personal blog of Parth Prajapati',
-        homepage_url: 'https://www.parthp.in',
+        homepage_url: 'https://www.parthp.dev',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#0EB9AF',
@@ -79,8 +79,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.parthp.in',
-        sitemap: 'https://www.parthp.in/sitemap.xml',
+        host: 'https://www.parthp.dev',
+        sitemap: 'https://www.parthp.dev/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
