@@ -4,10 +4,10 @@ date: "2018-01-12T11:00:00.000Z"
 layout: post
 path: "/react-hello-world"
 categories:
-  - React
-  - ReactDOM
-  - Babel
-  - Webpack
+  - react
+  - react-dom
+  - babel
+  - webpack
 ---
 
 Creating a project from ground up without using any boilerplates feels pretty much like going on an adventure in a jungle without carrying a map. So let's go ahead and create a hello world [React](https://reactjs.org) application from an empty directory to a fully functional React web application.
