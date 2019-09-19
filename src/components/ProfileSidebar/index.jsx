@@ -1,5 +1,5 @@
 import React from 'react'
-import { MapPin, Github, Linkedin, Twitter, Mail } from 'react-feather'
+import { MapPin, GitHub, Linkedin, Twitter, Mail } from 'react-feather'
 import ReactGA from 'react-ga'
 
 import { gaId } from '../../utils/config'
@@ -57,7 +57,7 @@ class ProfileSideBar extends React.Component {
                   to="https://github.com/prajapati-parth"
                   target="_blank"
                 >
-                  <Github size={22} className="featherIcon" />GitHub
+                  <GitHub size={22} className="featherIcon" />GitHub
                 </ReactGA.OutboundLink>
               </p>
             </div>
