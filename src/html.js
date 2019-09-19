@@ -1,18 +1,19 @@
-import React from "react"
+import React from 'react'
+import Helmet from 'react-helmet'
 
 let stylesStr
-if (process.env.NODE_ENV === `production`) {
+if (process.env.NODE_ENV === 'production') {
   try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
+    stylesStr = require('!raw-loader!../public/styles.css')
   } catch (e) {
     console.log(e)
   }
 }
 
-module.exports = class HTML extends React.Component {
+export default class HTML extends React.Component {
   render() {
     let css
-    if (process.env.NODE_ENV === `production`) {
+    if (process.env.NODE_ENV === 'production') {
       css = (
         <style
           id="gatsby-inlined-css"
@@ -20,28 +21,31 @@ module.exports = class HTML extends React.Component {
         />
       )
     }
+
     return (
-      <html {...this.props.htmlAttributes}>
+      <html lang="en">
         <head>
           <meta charSet="utf-8" />
-          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
             name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
           {css}
+          <link
+            href="/img/apple-touch-icon.png"
+            rel="apple-touch-icon"
+            sizes="180x180"
+          />
+          <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
         </head>
-        <body {...this.props.bodyAttributes}>
-          {this.props.preBodyComponents}
+        <body>
           <div
-            key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <script dangerouslySetInnerHTML={{__html: '(window.adsbygoogle = window.adsbygoogle || []).push({});'}}></script>
         </body>
       </html>
     )
