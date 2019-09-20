@@ -32,7 +32,7 @@ class BlogIndex extends React.Component {
     return (
       <div className="test">
         <Helmet
-          title={get(site, 'title')}
+          title={`Blog | ${get(site, 'title')}`}
           meta={[
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:site', content: `@${get(site, 'twitter')}` },
