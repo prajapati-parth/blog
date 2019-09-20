@@ -4,11 +4,11 @@ export const NAVIGATION_ITEMS = [
     linkTo: '/'
   },
   {
-    label: 'Profile',
-    linkTo: '/profile/'
-  },
-  {
     label: 'Projects',
     linkTo: '/projects/'
+  },
+  {
+    label: 'Blog',
+    linkTo: '/blog/'
   }
 ]
