@@ -19,7 +19,7 @@ Let’s look at some of the features that minimal-react offers and the upcoming 
 # Less dependencies
 Here’s a screenshot comparing the `node_modules` directory created by minimal-react and create-react-app.
 
-<img src="https://dl.dropboxusercontent.com/s/fb9m89834fkv30u/node-modules-comparision.png?dl=0" />
+<img class="img-fluid" src="https://dl.dropboxusercontent.com/s/fb9m89834fkv30u/node-modules-comparision.png?dl=0" />
 
 Minimal-react has smaller node_modules which means it has fewer dependencies on other modules hence installs faster and is easier to get started quickly. This would be a very helpful tool for someone who’s just starting to learn React, especially at work place during sessions or when explaining React to other teams.
 
@@ -38,7 +38,7 @@ Minimal react provides the user with all the control of the application where th
 # Simpler folder structure
 Minimal react gets started with a simpler folder structure for the components rather than putting everything inside the `src` directory. Here’s a screenshot of the folder structure from minimal-react
 
-<img src="https://dl.dropboxusercontent.com/s/j18b2yf279l09y6/folder-structure.png?dl=0" />
+<img class="img-fluid" src="https://dl.dropboxusercontent.com/s/j18b2yf279l09y6/folder-structure.png?dl=0" />
 
 Upon building all the imported `js` and `jsx` files under the `src` directory will get bundled into `output/bundle.min.js` that can be included within a script tag in html file.
 
