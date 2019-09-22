@@ -32,18 +32,22 @@ After initializing and building applications both with minimal-react and create-
 | 127 Kb | 141 Kb |
 
 # Easily configurable
-Minimal react provides the user with all the control of the application where the module bundler(webpack) the transpiler(babel) are free to be configured and even to be replaced.
+Minimal react provides the user with all the control of the application where the module bundler(webpack) the transpiler(babel) are free to be configured and even to be replaced. `webpack.config.js` and `webpack.dev.config.js` are the module bundler configuration files that can be changed for production and development environment respectively. Similarly, `.babelrc` can be updated to change transpiler settings.
+
 
 # Simpler folder structure
 Minimal react gets started with a simpler folder structure for the components rather than putting everything inside the `src` directory. Here’s a screenshot of the folder structure from minimal-react
 
 <img src="https://dl.dropboxusercontent.com/s/j18b2yf279l09y6/folder-structure.png?dl=0" />
 
+Upon building all the imported `js` and `jsx` files under the `src` directory will get bundled into `output/bundle.min.js` that can be included within a script tag in html file.
+
 # Upcoming changes
-These are some of the planned changes for minimal-react that would make it more simpler and quicker
+These are some of the planned changes for minimal-react that would make it more efficient
 - Replace npm with yarn
 - Replace webpack with parcel for zero configuration (this would eliminate `webpack.config.js` and `webpack.dev.config.js` files from the project directory
 - Provide configuration to initiate React app along with Redux
+- Built in support for scss and less
 
 If you haven’t tried out minimal-react yet, I suggest you give it a try and let me know the feedback on [twitter](https://twitter.com/iam_daparth).
 
