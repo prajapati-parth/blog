@@ -24,7 +24,7 @@ class SitePost extends React.Component {
       <div className="articles col-md-12">
         <Card
           title={title}
-          theme="blueGradient"
+          theme={data.frontmatter.theme}
           categories={data.frontmatter.categories}
           timeStamp={date}
           click={() => navigateTo(path)}

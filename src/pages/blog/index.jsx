@@ -77,6 +77,7 @@ export const pageQuery = graphql`
             path
             categories
             date(formatString: "DD MMM, YYYY")
+            theme
           }
         }
       }

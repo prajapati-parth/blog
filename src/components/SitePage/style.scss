@@ -19,6 +19,40 @@
       font-weight: 600;
     }
   }
+
+  .post {
+    a {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      max-width: 680px;
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    table {
+      margin: 20px auto;
+
+      th, td {
+        padding: 5px 17px;
+        border-left: 1px solid #e3e3e3;
+
+        &:first-child {
+          border-left: none;
+        }
+      }
+
+      thead {
+        tr {
+          border-bottom: 2px solid #e3e3e3;
+        }
+      }
+    }
+  }
 }
 
 section {
