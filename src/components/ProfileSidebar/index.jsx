@@ -2,7 +2,7 @@ import React from 'react'
 import { MapPin, GitHub, Linkedin, Twitter, Mail } from 'react-feather'
 import ReactGA from 'react-ga'
 
-import { gaId } from '../../utils/config'
+import { gaId, profileImg } from '../../utils/config'
 import './styles.scss'
 
 class ProfileSideBar extends React.Component {
@@ -15,7 +15,7 @@ class ProfileSideBar extends React.Component {
       <div className="aboutContainer">
         <div className="col-xs-12">
           <div className="profileImageContainer">
-            <img src="https://avatars6.githubusercontent.com/u/17194534" />
+            <img src={profileImg} />
           </div>
         </div>
 

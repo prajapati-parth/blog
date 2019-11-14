@@ -53,7 +53,7 @@ class Projects extends React.Component {
               name: 'twitter:site',
               content: `@${get(siteMetadata, 'twitter')}`,
             },
-            { property: 'og:title', content: title },
+            { property: 'og:title', content: `${title} | ${get(siteMetadata, 'title')}` },
             { property: 'og:type', content: 'website' },
             {
               property: 'og:description',
@@ -65,7 +65,7 @@ class Projects extends React.Component {
             },
             {
               property: 'og:image',
-              content: `https://avatars1.githubusercontent.com/u/17194534`,
+              content: `${get(siteMetadata, 'siteUrl')}/img/profile.png?v=2`,
             },
           ]}
         />
