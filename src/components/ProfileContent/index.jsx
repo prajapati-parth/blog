@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactGA from 'react-ga'
 import { Card } from 'eureka-ui';
+import { navigateTo } from 'gatsby-link';
 
 import { getExperience } from '../../utils'
 import { gaId } from '../../utils/config'
@@ -10,9 +11,9 @@ const AboutCardBody = () => {
   return (
     <div>
       <div className='bodySection'>
-        <span>Hi it's Parth, from Ahmedabad, India. I'm a software enginner currently working</span>
+        <span>Hi it's Parth, from Ahmedabad, India. I'm a software engineer currently working</span>
         <ReactGA.OutboundLink
-          className='profileCompany'
+          className='profile-page-link'
           eventLabel="profile-incapsulate"
           to="http://incapsulate.com/"
           target="_blank"
@@ -33,6 +34,24 @@ const AboutCardBody = () => {
             brushing my skills.`
           }
         </span>
+      </div>
+
+      <div className='bodySection'>
+        <span>Do check out my work on</span>
+        <a
+          className="profile-page-link"
+          onClick={() => {
+            ReactGA.event({
+              category: 'Profile page',
+              action: 'Click link',
+              label: 'the projects page'
+            })
+            navigateTo("/projects/")
+          }}
+        >
+          the projects page 
+        </a>
+        <span>and do drop me a line if you find something interesting.</span>
       </div>
     </div>
   )
