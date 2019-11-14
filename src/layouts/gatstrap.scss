@@ -84,3 +84,12 @@ p {
 img:hover {
   animation: pulse 0.5s;
 }
+
+
+a:not([href]) {
+  color: $purple !important;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
