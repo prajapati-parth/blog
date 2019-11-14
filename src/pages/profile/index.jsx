@@ -33,7 +33,7 @@ class Profile extends React.Component {
             },
             {
               property: 'og:image',
-              content: `https://avatars1.githubusercontent.com/u/17194534`,
+              content: `https://avatars6.githubusercontent.com/u/17194534`,
             },
           ]}
         />
