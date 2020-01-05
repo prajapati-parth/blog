@@ -6,7 +6,6 @@ import './style.scss'
 
 class SitePage extends React.Component {
   render() {
-    console.log(this.props)
     const { data } = this.props
     return (
       <div className="post-container">
