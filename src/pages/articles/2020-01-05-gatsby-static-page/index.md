@@ -254,7 +254,7 @@ When you build the project, generally using the `npm run build` or `gatsby build
 # Adding more static pages
 Moving forward, adding more static pages is very simple. You may just add more markdown files to the directory that you have configured with the `gatsby-source-filesystem` and they’ll be generated and built in the `gatsby-node.js` file as the function loops through all the items in the graphql query.
 
-> Important Tip:  Always remember to specify the url in the frontmatter should be unique throughout your website.
+> Important Tip: Always remember to specify a unique value for url in frontmatter throughout your website.
 
 Here’s a GitHub repo of all the code generated during this blog:
 [https://github.com/prajapati-parth/gatsby-static-page-blog](https://github.com/prajapati-parth/gatsby-static-page-blog)
