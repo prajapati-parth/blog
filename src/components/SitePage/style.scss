@@ -52,6 +52,27 @@
       }
     }
   }
+
+  .language-text {
+    background: scale-color($purple, $lightness: +70%);
+    border: 1px solid $purple;
+    color: #000;
+    padding: 0.1rem 0.3rem;
+  }
+
+  blockquote {
+    background-color: scale-color($yellow, $lightness: +80%);
+    border-left: 5px solid $yellow;
+    padding: 1rem;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  h1 {
+    margin-top: 3rem;
+  }
 }
 
 section {

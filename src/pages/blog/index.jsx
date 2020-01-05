@@ -1,7 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
-import sortBy from 'lodash/sortBy'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 
@@ -13,11 +11,14 @@ class BlogIndex extends React.Component {
     const site = get(this, 'props.data.site.siteMetadata')
     const posts = get(this, 'props.data.remark.posts')
 
-    const sortedPosts = sortBy(posts, post =>
-      get(post, 'post.frontmatter.date')
-    ).reverse()
+    posts.sort((valueA, valueB) => {
+      const dateA = new Date(get(valueA, 'post.frontmatter.date'))
+      const dateB = new Date(get(valueB, 'post.frontmatter.date'))
 
-    sortedPosts.forEach((data, i) => {
+      return dateB - dateA;
+    })
+
+    posts.forEach((data, i) => {
       const layout = get(data, 'post.frontmatter.layout')
       const path = get(data, 'post.path')
       if (layout === 'post' && path !== '/404/') {
