@@ -13,7 +13,7 @@ categories:
 
 Using Gatsby to create your website has great SEO benefits. Simply saying, Gatsby converts your React components into html, css and javascript that can be easily be served using CDN.
 
-Then what’s so fancy about SEO with Gatsby? Gatsby has the power to call a datasource(mostly an API) at build-time and make the data available to React components through props using a GraphQL query.
+Then what’s so fancy about SEO with Gatsby? Gatsby has the power to call a datasource(mostly an API or in our case the local filesystem) at build-time and make the data available to React components through props using a GraphQL query.
 
 Let’s take a deeper look at that in action by creating a static page from a markdown file.
 
@@ -253,6 +253,8 @@ When you build the project, generally using the `npm run build` or `gatsby build
 
 # Adding more static pages
 Moving forward, adding more static pages is very simple. You may just add more markdown files to the directory that you have configured with the `gatsby-source-filesystem` and they’ll be generated and built in the `gatsby-node.js` file as the function loops through all the items in the graphql query.
+
+> Important Tip:  Always remember to specify the url in the frontmatter should be unique throughout your website.
 
 Here’s a GitHub repo of all the code generated during this blog:
 [https://github.com/prajapati-parth/gatsby-static-page-blog](https://github.com/prajapati-parth/gatsby-static-page-blog)
