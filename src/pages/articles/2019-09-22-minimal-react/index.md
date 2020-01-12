@@ -9,6 +9,14 @@ categories:
   - minimal-react
   - cli
   - boilerplate
+previous:
+  - Creating a Hello World React application from scratch
+  - /react-hello-world
+  - blueGradient
+next:
+  - Static page in Gatsby
+  - /static-page-in-gatsby
+  - pinkGradient
 ---
 
 Considering React and React Native, [create-react-app](https://facebook.github.io/create-react-app) and [react-native-cli](https://www.npmjs.com/package/react-native-cli) are far more popular tools than any other to get started with a basic application, yet I created [minimal-react](https://www.npmjs.com/package/minimal-react) that serve different purposes. 

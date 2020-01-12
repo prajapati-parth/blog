@@ -9,6 +9,10 @@ categories:
   - react-dom
   - babel
   - webpack
+next:
+  - Minimal React vs Create React App
+  - /minimal-react
+  - greenGradient
 ---
 
 Creating a project from ground up without using any boilerplates feels pretty much like going on an adventure in a jungle without carrying a map. So let's go ahead and create a hello world [React](https://reactjs.org) application from an empty directory to a fully functional React web application.

@@ -79,6 +79,8 @@ export const pageQuery = graphql`
             categories
             date(formatString: "DD MMM, YYYY")
             theme
+            previous
+            next
           }
         }
       }
