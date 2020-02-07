@@ -11,7 +11,7 @@ const AboutCardBody = () => {
   return (
     <div>
       <div className='bodySection'>
-        <span>Hi it's Parth, from Ahmedabad, India. I'm a software engineer currently working</span>
+        <span>Hi it's Parth, from Pune, India. I'm a software engineer currently working</span>
         <ReactGA.OutboundLink
           className='profile-page-link'
           eventLabel="profile-incapsulate"

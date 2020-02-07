@@ -43,7 +43,7 @@ class ProfileSideBar extends React.Component {
         <div className="locationContainer">
           <div className="col-xs-12">
             <p className="location">
-              <MapPin size={22} className="featherIcon" />Ahmedabad, India
+              <MapPin size={22} className="featherIcon" />Pune, India
             </p>
           </div>
         </div>
