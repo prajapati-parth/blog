@@ -15,7 +15,7 @@ previous:
   - greenGradient
 next:
   - Joining Aera Technology
-  - /joinig-aera
+  - /joining-aera
   - blueGradient
 ---
 
