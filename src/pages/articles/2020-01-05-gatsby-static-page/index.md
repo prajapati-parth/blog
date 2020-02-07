@@ -13,6 +13,10 @@ previous:
   - Minimal React vs Create React App
   - /minimal-react
   - greenGradient
+next:
+  - Joining Aera Technology
+  - /joinig-aera
+  - blueGradient
 ---
 
 Using Gatsby to create your website has great SEO benefits. Simply saying, Gatsby converts your React components into html, css and javascript that can be easily be served using CDN.
