@@ -5,7 +5,7 @@
   background-color: #f1f1f1;
   padding: 10px 0;
 
-  .container {
+  .post {
     background-color: #ffffff;
     padding: 15px;
     border-radius: 0.3em;
@@ -34,7 +34,7 @@
     }
 
     table {
-      margin: 20px auto;
+      margin: 30px auto;
 
       th, td {
         padding: 5px 17px;
@@ -50,6 +50,20 @@
           border-bottom: 2px solid #e3e3e3;
         }
       }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    li {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    .gatsby-highlight {
+      margin-bottom: 20px;
     }
   }
 
@@ -80,6 +94,11 @@
     display: flex;
     align-items: center;
   }
+}
+
+.share-widget-container {
+  top: 350px;
+  position: sticky;
 }
 
 section {

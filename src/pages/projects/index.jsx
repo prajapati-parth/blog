@@ -44,7 +44,7 @@ class Projects extends React.Component {
     const title = 'Projects'
 
     return (
-      <div>
+      <div className="container">
         <Helmet
           title={`${title} | ${get(siteMetadata, 'title')}`}
           meta={[

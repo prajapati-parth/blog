@@ -1,5 +1,5 @@
 ---
-title: "Static page in Gatsby"
+title: "Creating a static page in Gatsby with filesystem data"
 date: "2020-01-05T16:30:00.000Z"
 layout: post
 path: "/static-page-in-gatsby"
@@ -9,10 +9,6 @@ categories:
   - react
   - static-page
   - graphql
-previous:
-  - Minimal React vs Create React App
-  - /minimal-react
-  - greenGradient
 next:
   - Joining Aera Technology
   - /joining-aera
@@ -39,14 +35,14 @@ Let’s take a deeper look at that in action by creating a static page from a ma
     cd static-page
     npm start
 ```
-4. At this point you’ll be able to see a page with “Hello world!” in your browser by navigating to http://localhost:8000
+4. At this point you’ll be able to see a page with “Hello world!” in your browser by navigating to <a target="_blank" href="http://localhost:8000">http://localhost:8000</a>
 
 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/ry3igfqt219spss/initial-setup-gatsby-cli.png?dl=0" alt="initial-setup-gatsby-cli" />
 
 This is the basic setup for a hello world gatsby website
 
 # Add plugin to read markdown files from file system
-To read data from the files in your local system, we’ll be adding a plugin called [gatsby-source-filesystem](https://www.npmjs.com/package/gatsby-source-filesystem). This plugin will read data from markdown files and make it available to be queried by GraphQL.
+To read data from the files in your local system, we’ll be adding a plugin called <a target="_blank" href="https://www.npmjs.com/package/gatsby-source-filesystem">gatsby-source-filesystem</a>. This plugin will read data from markdown files and make it available to be queried by GraphQL.
 
 1. Install gatsby-source-filesystem
 ```bash
@@ -80,12 +76,12 @@ path: "/my-first-static-page"
 date: "2020-01-05"
 title: "Creating a static page to learn Gatsby"
 ---
-Hello, this my first gatsby static page by reading [this](https://parthp.dev/static-page-in-gatsby) blog.
+Hello, this my first gatsby static page by reading <a target="_blank" href="https://parthp.dev/static-page-in-gatsby">this</a> blog.
 ```
 
 Any markdown syntax in this file, will be converted to html to be displayed on a webpage. Gatsby has a plugin right for that.
 
-At this point, if you run your project using `npm start` and go to [http://localhost:8000/___graphql](http://localhost:8000/___graphql), you’ll be able to query the file details that this plugin has read from the filesystem. You’d be able to see something like this
+At this point, if you run your project using `npm start` and go to <a target="_blank" href="http://localhost:8000/___graphql">http://localhost:8000/___graphql</a>, you’ll be able to query the file details that this plugin has read from the filesystem. You’d be able to see something like this
 
 <img class="img-fluid" src="https://dl.dropboxusercontent.com/s/ugy5ord2ugxrw5j/gatsby-source-file-system-graphql-query.png?dl=0" alt="gatsby-source-filesystem-graphql-query" />
 
@@ -96,7 +92,7 @@ At this point, if you run your project using `npm start` and go to [http://local
 By this step we can know that Gatsby has read the content from our local filesystem and made it available to be used in our project.
 
 # Converting markdown files to HTML
-Let’s add one more plugin, [gatsby-transformer-remark](https://www.npmjs.com/package/gatsby-transformer-remark) to our project. `gatsby-transformer-remark` would convert the files that we fetched using `gatsby-source-filesystem` from markdown to HTML.
+Let’s add one more plugin, <a target="_blank" href="https://www.npmjs.com/package/gatsby-transformer-remark">gatsby-transformer-remark</a> to our project. `gatsby-transformer-remark` would convert the files that we fetched using `gatsby-source-filesystem` from markdown to HTML.
 
 1. Install gatsby-transformer-remark
 ```bash
@@ -118,7 +114,7 @@ yarn add gatsby-transformer-remark --save
     }
 ```
 
-We’ll not be configuring other options of this plugin and use the default ones. But I recommend checking out [the plugin documentation](https://www.npmjs.com/package/gatsby-transformer-remark) if you need custom implementation.
+We’ll not be configuring other options of this plugin and use the default ones. But I recommend checking out <a target="_blank" href="https://www.npmjs.com/package/gatsby-transformer-remark">the plugin documentation</a> if you need custom implementation.
 
 > Did you notice the values of path, date and title that we wrote inside of `---` in the markdown file? It is this plugin that reads the values inside and makes it available as separate nodes to be fetched data from. These values are called frontmatter and we’ll further look more into it.
 
@@ -192,7 +188,7 @@ This component is capable of querying data from our GraphQL source and render it
 > See how the frontmatter data and the html data are available and used in different ways.
 
 # Create a page using the template and Gatsby lifecycle APIs
-Gatsby has lifecycle APIs that let you control the website build flow like fetching data from different sources, creating pages from those fetched data and many more that you can find [here](https://www.gatsbyjs.org/docs/node-apis).
+Gatsby has lifecycle APIs that let you control the website build flow like fetching data from different sources, creating pages from those fetched data and many more that you can find <a target="_blank" href="https://www.gatsbyjs.org/docs/node-apis">here</a>.
 
 For our use case, we’ve already fetched data to be displayed using `gatsby-source-filesystem` from our local filesystem. We’ll now be using Gatsby’s node API `createPages` to use that data and create a page using the blog-template that we just created.
 
@@ -265,6 +261,6 @@ Moving forward, adding more static pages is very simple. You may just add more m
 > Important Tip: Always remember to specify a unique value for url in frontmatter throughout your website.
 
 Here’s a GitHub repo of all the code generated during this blog:
-[https://github.com/prajapati-parth/gatsby-static-page-blog](https://github.com/prajapati-parth/gatsby-static-page-blog)
+<a target="_blank" href="https://github.com/prajapati-parth/gatsby-static-page-blog">https://github.com/prajapati-parth/gatsby-static-page-blog</a>
 
 In the next blog, I’ll be writing about how you can configure Gatsby to use multiple templates. 
