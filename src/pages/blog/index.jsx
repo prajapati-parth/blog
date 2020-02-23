@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
     })
 
     return (
-      <div className="test">
+      <div className="container">
         <Helmet
           title={`Blog | ${get(site, 'title')}`}
           meta={[
@@ -47,7 +47,9 @@ class BlogIndex extends React.Component {
             },
           ]}
         />
-        {pageLinks}
+        <div className="row">
+          {pageLinks}
+        </div>
       </div>
     )
   }
@@ -64,7 +66,6 @@ export const pageQuery = graphql`
         url: siteUrl
         author
         twitter
-        adsense
       }
     }
     remark: allMarkdownRemark {

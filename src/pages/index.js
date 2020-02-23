@@ -12,7 +12,7 @@ class Profile extends React.Component {
     const title = 'Profile'
 
     return (
-      <div>
+      <div className="container">
         <Helmet
           title={`${title} | ${get(siteMetadata, 'title')}`}
           meta={[

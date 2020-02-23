@@ -9,19 +9,15 @@ categories:
   - minimal-react
   - cli
   - boilerplate
-previous:
-  - Creating a Hello World React application from scratch
-  - /react-hello-world
-  - blueGradient
 next:
   - Static page in Gatsby
   - /static-page-in-gatsby
   - pinkGradient
 ---
 
-Considering React and React Native, [create-react-app](https://facebook.github.io/create-react-app) and [react-native-cli](https://www.npmjs.com/package/react-native-cli) are far more popular tools than any other to get started with a basic application, yet I created [minimal-react](https://www.npmjs.com/package/minimal-react) that serve different purposes. 
+Considering React and React Native, <a target="_blank" href="https://facebook.github.io/create-react-app">create-react-app</a> and <a target="_blank" href="https://www.npmjs.com/package/react-native-cli">react-native-cli</a> are far more popular tools than any other to get started with a basic application, yet I created <a target="_blank" href="https://www.npmjs.com/package/minimal-react">minimal-react</a> that serve different purposes. 
 
-I needed something that would kick-in fast, would have less dependencies, would have a simple architecture and be easy to understand and modify for someone getting started. [minimal-react](https://www.npmjs.com/package/minimal-react) is one such tool.
+I needed something that would kick-in fast, would have less dependencies, would have a simple architecture and be easy to understand and modify for someone getting started. <a target="_blank" href="https://www.npmjs.com/package/minimal-react">minimal-react</a> is one such tool.
 
 Let’s look at some of the features that minimal-react offers and the upcoming changes in it.
 # Less dependencies
@@ -57,8 +53,8 @@ These are some of the planned changes for minimal-react that would make it more 
 - Provide configuration to initiate React app along with Redux
 - Built in support for scss and less
 
-If you haven’t tried out minimal-react yet, I suggest you give it a try and let me know the feedback on [twitter](https://twitter.com/iam_daparth).
+If you haven’t tried out minimal-react yet, I suggest you give it a try and let me know the feedback on <a target="_blank" href="https://twitter.com/iam_daparth">twitter</a>.
 
 ## Useful links
-- [minimal-react NPM](https://www.npmjs.com/package/minimal-react)
-- [minimal-react GitHub](https://github.com/prajapati-parth/minimal-react)
+- <a target="_blank" href="https://www.npmjs.com/package/minimal-react">minimal-react NPM</a>
+- <a target="_blank" href="https://github.com/prajapati-parth/minimal-react">minimal-react GitHub</a>

@@ -15,7 +15,7 @@ next:
   - greenGradient
 ---
 
-Creating a project from ground up without using any boilerplates feels pretty much like going on an adventure in a jungle without carrying a map. So let's go ahead and create a hello world [React](https://reactjs.org) application from an empty directory to a fully functional React web application.
+Creating a project from ground up without using any boilerplates feels pretty much like going on an adventure in a jungle without carrying a map. So let's go ahead and create a hello world <a target="_blank" href="https://reactjs.org">React</a> application from an empty directory to a fully functional React web application.
 
 # Initial Setup
 
@@ -35,14 +35,14 @@ That’s it! You have successfully initialized npm and we are now ready to add R
 
 # Install React and ReactDOM
 
-ReactDOM will serve as a glue between the browser [DOM(Document Object Model)](https://www.w3.org/TR/WD-DOM/introduction.html) and our React application.
+ReactDOM will serve as a glue between the browser <a target="_blank" href="https://www.w3.org/TR/WD-DOM/introduction.html">DOM(Document Object Model)</a> and our React application.
 
 Let’s go ahead and install React and ReactDOM.
 
 ```bash
 npm install react react-dom --save
 ```
-Next, let’s install and setup [Babel](https://babeljs.io) so that browsers can understand the JavaScript’s ES6 syntax that we'll be using in our application. It is not mandatory to use React with ES6 or further versions of JavaScript, React application can also be configured to use ES5 version.
+Next, let’s install and setup <a target="_blank" href="https://babeljs.io">Babel</a> so that browsers can understand the JavaScript’s ES6 syntax that we'll be using in our application. It is not mandatory to use React with ES6 or further versions of JavaScript, React application can also be configured to use ES5 version.
 
 # Install and configure Babel
 
@@ -57,7 +57,7 @@ npm install babel-core babel-loader babel-preset-env babel-preset-react --save-d
 Okay some explanation here:
 
 1.  `babel-core` - The actual babel package.
-2.  `babel-loader` - Loader used by [webpack](https://webpack.js.org) to call babel.
+2.  `babel-loader` - Loader used by <a target="_blank" href="https://webpack.js.org">webpack</a> to call babel.
 3.  `babel-preset-env` - Babel preset used to transpile ES6 and higher version to ES5.
 4.  `babel-preset-react` - Adds support for JSX.
 

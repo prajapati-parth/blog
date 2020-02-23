@@ -1,7 +1,6 @@
 import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
-import Adsense from '../Adsense'
 
 import { Card } from 'eureka-ui'
 import ReadNext from '../ReadNext'
@@ -14,11 +13,6 @@ class SitePost extends React.Component {
     const path = get(data, 'frontmatter.path')
     const date = get(data, 'frontmatter.date')
     const excerpt = get(data, 'excerpt')
-    const ad = isIndex ? (
-      ''
-    ) : (
-      <Adsense clientId={site.meta.adsense} slotId="" format="auto" />
-    )
 
     return (
       <div className="articles col-md-12">
@@ -33,7 +27,6 @@ class SitePost extends React.Component {
         >
         {excerpt}
         </Card>
-        {ad}
         {isIndex ? '' : <ReadNext data={site} />}
       </div>
     )

@@ -15,12 +15,12 @@ const AboutCardBody = () => {
         <ReactGA.OutboundLink
           className='profile-page-link'
           eventLabel="profile-incapsulate"
-          to="http://incapsulate.com/"
+          to="https://www.aeratechnology.com/"
           target="_blank"
         >
-          @Incapsulate
+          @Aera Technology
         </ReactGA.OutboundLink>
-        <span>as a Full-stack developer.</span>
+        <span>as a User Interface Engineer.</span>
       </div>
       <div className='bodySection'>
         <span>
@@ -51,7 +51,7 @@ const AboutCardBody = () => {
         >
           the projects page 
         </a>
-        <span>and do drop me a line if you find something interesting.</span>
+        <span>and drop me a line if you find something interesting.</span>
       </div>
     </div>
   )
