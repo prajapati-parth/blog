@@ -35,7 +35,7 @@ class SitePage extends React.Component {
             </div>
           </div>
           </div>
-          <div className="col-4 d-lg-block d-md-none">
+          <div className="col-4 d-none d-lg-block">
             <MoreSidebar />
             <div className="share-widget-container">
               <SocialMediaShare
