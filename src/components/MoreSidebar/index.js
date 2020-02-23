@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 import './styles.scss';
 
@@ -33,7 +34,16 @@ const MoreSidebar = () => {
           moreItems.map((item, index) => {
             return (
               <div className="sidebar-item" key={item.link}>
-                <a href={item.link}>
+                <a
+                  href={item.link}
+                  onClick={() => {
+                    ReactGA.event({
+                      category: window.location.pathname,
+                      action: 'Sidebar navigation',
+                      label: item.label
+                    });
+                  }}
+                >
                   <span>{`${index + 1}. `}</span>
                   <span>{item.label}</span>
                 </a>

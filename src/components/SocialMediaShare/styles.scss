@@ -12,10 +12,11 @@
       align-items: center;
       justify-content: center;
       border-radius: 50px;
+      background-color: #FFF;
       
       &:hover {
-        background-color: #FFF;
         cursor: pointer;
+        box-shadow: 0 4px 6px 0px hsla(0, 0%, 0%, 0.2);
       }
 
       a {

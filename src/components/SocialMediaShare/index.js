@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import { Twitter, Facebook, Linkedin } from 'react-feather';
 
 import { SOCIAL_MEDIA_TYPE, twitterShareText } from './constants';
@@ -30,12 +31,21 @@ const SocialMediaShare = ({type, url, title}) => {
         {
           type.map(typeItem => {
             const socialMediaShareIdentifier = socialMediaShareObj[typeItem];
+            const gotoUrl = `${socialMediaShareIdentifier.postLink}${socialMediaShareIdentifier.getPostText(url, title)}`;
             return (
-              <div className="item-container">
-                <a
-                  target="_blank"
-                  href={`${socialMediaShareIdentifier.postLink}${socialMediaShareIdentifier.getPostText(url, title)}`}
-                >
+              <div
+                key={typeItem}
+                className="item-container"
+                onClick={() => {
+                  ReactGA.event({
+                    category: title,
+                    action: 'Share blog',
+                    label: typeItem
+                  });
+                  window.open(gotoUrl, '_blank');
+                }}
+              >
+                <a>
                   <socialMediaShareIdentifier.component />
                 </a>
               </div>
