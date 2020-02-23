@@ -1,7 +1,6 @@
 import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import get from 'lodash/get'
-import Adsense from '../Adsense'
 
 import { Card } from 'eureka-ui'
 import ReadNext from '../ReadNext'

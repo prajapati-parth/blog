@@ -4,8 +4,7 @@ module.exports = {
     description: 'The personal blog of Parth Prajapati',
     siteUrl: 'https://www.parthp.dev',
     author: 'Parth Prajapati',
-    twitter: 'iam_daparth',
-    adsense: '',
+    twitter: 'iam_daparth'
   },
   pathPrefix: '/',
   plugins: [

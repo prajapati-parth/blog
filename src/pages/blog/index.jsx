@@ -66,7 +66,6 @@ export const pageQuery = graphql`
         url: siteUrl
         author
         twitter
-        adsense
       }
     }
     remark: allMarkdownRemark {
