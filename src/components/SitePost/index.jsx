@@ -27,7 +27,6 @@ class SitePost extends React.Component {
         >
         {excerpt}
         </Card>
-        {ad}
         {isIndex ? '' : <ReadNext data={site} />}
       </div>
     )
