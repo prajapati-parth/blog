@@ -14,11 +14,6 @@ class SitePost extends React.Component {
     const path = get(data, 'frontmatter.path')
     const date = get(data, 'frontmatter.date')
     const excerpt = get(data, 'excerpt')
-    const ad = isIndex ? (
-      ''
-    ) : (
-      <Adsense clientId={site.meta.adsense} slotId="" format="auto" />
-    )
 
     return (
       <div className="articles col-md-12">
