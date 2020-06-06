@@ -25,16 +25,16 @@ This requires a lot of data processing, data crunching and data visualisation. M
 <a href="https://reactjs.org/" target="_blank">React</a> is something that comes to mind when one wants to develop a data intensive application that changes frequently and updates in real time. And Aera is where React fits right in. Since me being really close to React and that I firmly believe that React is here to stay for long, I took upon this challenge to be a part of a company that helps large scale enterprises be autonomous and self-driving.
 
 # Aera & Me
-Well, here’s a picture of a welcome gift that Aera sent me.
-
-<img src="https://drive.google.com/uc?id=10KC11NtkjluE7apHWRPxJZ6mtBNmDw5j" alt="aera-welcome-gift" class="img-fluid" />
-
 I’ve spoken to a whole lot of people at Aera, that made me come more and more close to the product and the team; and it felt like home. Aera’s culture is one of a kind where you get to play, enjoy the work, build something great together and make world a better place than it was yesterday.
 
 All this is made possible by the **Aeranauts**, and I can’t wait to be an Aeranaut myself!
 
+Well, here’s a picture of a welcome gift that Aera sent me.
+
+<img src="https://drive.google.com/uc?id=10KC11NtkjluE7apHWRPxJZ6mtBNmDw5j" alt="aera-welcome-gift" class="img-fluid" />
+
 # For You!
-Can you challenge yourself to work in such a challenging domain and make it more better? Would you like to take a step, with us, towards making the world better? Check where you’d fill in the best and <a href="https://www.aeratechnology.com/careers" target="_blank">apply here</a> to join Aera and be my fellow Aeranaut. 
+Can you challenge yourself to work in such a domain and make it more better? Would you like to take a step, with us, towards making the world better? Check where you’d fill in the best and <a href="https://www.aeratechnology.com/careers" target="_blank">apply here</a> to join Aera and be my fellow Aeranaut. 
 
 _P.S. I was in it just to be called an Aeranaut ;) JK._
 

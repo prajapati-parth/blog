@@ -37,6 +37,19 @@ const AboutCardBody = () => {
       </div>
 
       <div className='bodySection'>
+        <span>
+          {
+            `
+              For a social cause, I'm working on building an educational product that helps
+              students by providing video lectures, notes and other study materials free of
+              cost. You can know more about it
+            `
+          }
+        </span>
+        <a href="https://educationlessons.co.in">here.</a>
+      </div>
+
+      <div className='bodySection'>
         <span>Do check out my work on</span>
         <a
           className="profile-page-link"
