@@ -32,6 +32,9 @@ export const getAllPostsPath = (): string[] => {
 }
 
 export const getPostDetails = (path: string): BlogPost => {
+  console.log("----------------------------")
+  console.log(process.cwd());
+  console.log("----------------------------")
   const postFilePath = join(process.cwd(), 'articles', path, 'index.md');
   const postRawContent = fs.readFileSync(postFilePath, 'utf8');
 
