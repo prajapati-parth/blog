@@ -20,6 +20,7 @@ const ProfileSidebar = (): JSX.Element => {
             <a
               href="https://github.com/prajapati-parth"
               target="_blank"
+              rel="noreferrer"
             >
               @prajapati-parth
             </a>
@@ -48,6 +49,7 @@ const ProfileSidebar = (): JSX.Element => {
               <a
                 href="https://github.com/prajapati-parth"
                 target="_blank"
+                rel="noreferrer"
               >
                 <GitHub size={22} className={ProfileSidebarStyles.featherIcon} />GitHub
               </a>
@@ -58,6 +60,7 @@ const ProfileSidebar = (): JSX.Element => {
               <a
                 href="https://www.linkedin.com/in/prajapatiparth"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Linkedin size={22} className={ProfileSidebarStyles.featherIcon} />LinkedIn
               </a>
@@ -71,6 +74,7 @@ const ProfileSidebar = (): JSX.Element => {
               <a
                 href="https://twitter.com/iam_daparth"
                 target="_blank"
+                rel="noreferrer"
               >
                 <Twitter size={22} className={ProfileSidebarStyles.featherIcon} />Twitter
               </a>

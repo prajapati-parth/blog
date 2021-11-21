@@ -20,7 +20,7 @@ const Projects = (): JSX.Element => {
       <div className="row">
         {
           PROJECT_LIST.map(project => (
-            <div className="col-sm-12 col-md-6">
+            <div className="col-sm-12 col-md-6" key={project.link}>
               <Card title={project.name} img={project.image} click={() => window.open(project.link, '_blank')}>
                 {project.description}
               </Card>

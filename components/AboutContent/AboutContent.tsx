@@ -12,11 +12,12 @@ const AboutContent = (): JSX.Element => {
         <div>
           <div className={AboutContentStyles.bodySection}>
             <p>
-              Hi it's Parth, from Pune, India. I'm a software engineer currently working
+              Hi it&apos;s Parth, from Pune, India. I&apos;m a software engineer currently working
             <a
               className={AboutContentStyles.profilePageLink}
               href="https://www.aeratechnology.com/"
               target="_blank"
+              rel="noreferrer"
             >
               @Aera Technology
             </a>

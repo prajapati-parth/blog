@@ -16,17 +16,18 @@ const Footer = (): JSX.Element => {
               <Heart size={22} className={FooterStyles.featherIcon} />
               <span> using </span>
               <span className={`${FooterStyles.boldText} ${FooterStyles.marginedText}`}>
-                <a href="https://reactjs.org/" target="_blank">React</a>
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a>
               </span>
               <span> and </span>
               <span className={`${FooterStyles.boldText} ${FooterStyles.marginedText}`}>
-                <a href="https://nextjs.org/" target="_blank">NextJS</a>
+                <a href="https://nextjs.org/" target="_blank" rel="noreferrer">NextJS</a>
               </span>
               <span> by </span>
               <a
                 className={`${FooterStyles.boldText} ${FooterStyles.marginedText}`}
                 target="_blank"
                 href="https://github.com/prajapati-parth"
+                rel="noreferrer"
               >
                 Parth Prajapati
               </a>
@@ -43,6 +44,7 @@ const Footer = (): JSX.Element => {
                 className={`${FooterStyles.boldText} ${FooterStyles.marginedText}`}
                 target="_blank"
                 href="https://github.com/prajapati-parth"
+                rel="noreferrer"
               >
                 {siteTitle}
               </a>
