@@ -1,0 +1,73 @@
+.aboutContainer {
+  .profileImageContainer {
+    img {
+      border-radius: 100px;
+      width: 160px;
+    }
+  }
+
+  .name {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    &Container {
+      margin-top: 25px;
+      .githubHandle a {
+        color: #969696;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    &-nick {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+  .bioContainer {
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  .locationContainer {
+    margin-top: 20px;
+    margin-bottom: 25px;
+
+    .location {
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  .profileLink {
+    &Container {
+      margin-top: 5px;
+    }
+    a {
+      text-decoration: none;
+      color: #3c3d3d;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .featherIcon {
+    margin: 0 4px 0 0;
+  }
+}
