@@ -2,7 +2,7 @@
 title: "Joining Aera Technology"
 date: "2020-02-08T01:30:00.000Z"
 layout: post
-path: "/joining-aera"
+path: "joining-aera"
 theme: "blueGradient"
 categories:
   - life events

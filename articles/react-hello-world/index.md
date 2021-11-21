@@ -2,7 +2,7 @@
 title: "Creating a Hello World React application from scratch"
 date: "2018-01-12T11:00:00.000Z"
 layout: post
-path: "/react-hello-world"
+path: "react-hello-world"
 theme: "blueGradient"
 categories:
   - react

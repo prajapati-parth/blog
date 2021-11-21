@@ -2,7 +2,7 @@
 title: "Creating a static page in Gatsby with filesystem data"
 date: "2020-01-05T16:30:00.000Z"
 layout: post
-path: "/static-page-in-gatsby"
+path: "static-page-in-gatsby"
 theme: "pinkGradient"
 categories:
   - gatsby

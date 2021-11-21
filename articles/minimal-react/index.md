@@ -2,7 +2,7 @@
 title: "Minimal React vs Create React App"
 date: "2019-09-22T16:00:00.000Z"
 layout: post
-path: "/minimal-react"
+path: "minimal-react"
 theme: "greenGradient"
 categories:
   - react
