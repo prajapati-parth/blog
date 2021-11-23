@@ -2,18 +2,18 @@
   border-bottom: 2px solid #f1f1f1;
 
   .navbarBrand {
-    color: #3c3d3d;
+    color: #000;
     font-weight: bold;
   }
 
   .navItem {
     a {
-      color: #707070;
+      color: #000;
     }
 
     &.active {
       a {
-        color: #3c3d3d;
+        color: #000;
         font-weight: bold;
       }
     }

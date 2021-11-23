@@ -13,7 +13,7 @@
     &Container {
       margin-top: 25px;
       .githubHandle a {
-        color: #969696;
+        color: #000;
         text-decoration: none;
         &:hover {
           text-decoration: underline;
@@ -56,7 +56,7 @@
     }
     a {
       text-decoration: none;
-      color: #3c3d3d;
+      color: #000;
       font-size: 16px;
       display: flex;
       align-items: center;

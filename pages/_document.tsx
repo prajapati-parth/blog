@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <meta name="google-site-verification" content="r7ZDK-XF9PZ0QUzLrGPJE3WVGbdxywDDPaxCzdDCxiA" />
           <link rel="icon" href="/img/favicon.ico" />

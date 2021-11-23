@@ -9,7 +9,12 @@ const ProfileSidebar = (): JSX.Element => {
     <div className={ProfileSidebarStyles.aboutContainer}>
       <div className="col-xs-12">
         <div className={ProfileSidebarStyles.profileImageContainer}>
-          <img src="https://avatars.githubusercontent.com/u/17194534?v=4" />
+          <img
+            width="160"
+            height="160"
+            alt="profile-image"
+            src="https://avatars.githubusercontent.com/u/17194534?v=4"
+          />
         </div>
       </div>
 
