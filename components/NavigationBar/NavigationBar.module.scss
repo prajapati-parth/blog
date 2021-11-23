@@ -1,0 +1,21 @@
+.navbar {
+  border-bottom: 2px solid #f1f1f1;
+
+  .navbarBrand {
+    color: #3c3d3d;
+    font-weight: bold;
+  }
+
+  .navItem {
+    a {
+      color: #707070;
+    }
+
+    &.active {
+      a {
+        color: #3c3d3d;
+        font-weight: bold;
+      }
+    }
+  }
+}

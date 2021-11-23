@@ -1,0 +1,73 @@
+@import './fonts.scss';
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 50px;
+  background-color: #f1f1f1;
+}
+
+a {
+  color: #673ab7;
+  &:hover {
+    color: #673ab7;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width:640px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width:740px
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width:840px
+  }
+}
+
+.main {
+  padding-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1.05rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+code {
+  background: #d1c2ec;
+  border: 1px solid #673ab7;
+  color: #000;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3em;
+}

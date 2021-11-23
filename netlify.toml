@@ -1,4 +1,0 @@
-[build]
-  environment = { GATSBY_GA_ID = "UA-111782126-1"}
-[context.deploy-preview]
-  environment = { GATSBY_GA_ID = "UA-111782126-2"}
