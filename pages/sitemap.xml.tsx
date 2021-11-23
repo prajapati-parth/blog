@@ -51,7 +51,11 @@ const getBlogPageUrl = (blogPosts: FrontMatter[]): string => {
 }
 
 const getStaticPageUrl = (): string => {
-  return fs.readdirSync(join(process.cwd(), 'pages'))
+  return fs.readdirSync({
+    development: 'pages',
+    test: './',
+    production: './',
+  }[process.env.NODE_ENV])
     .filter(filterNonStaticPages)
     .map(cleanPageName)
     .map(createUrlTag)
