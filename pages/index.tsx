@@ -10,6 +10,7 @@ const IndexPage: NextPage = () => {
     <div className="container">
       <Head>
         <title>Profile | {siteTitle}</title>
+        <meta name="description" content="The blog of Parth Prajapati" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content={`@${twitterHandle}`} />
         <meta property="og:title" content={siteTitle} />
