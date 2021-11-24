@@ -8,6 +8,7 @@ const Projects = (): JSX.Element => {
     <div className="container">
       <Head>
         <title>Projects | {siteTitle}</title>
+        <meta name="description" content="Projects created by Parth Prajapti" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content={`@${twitterHandle}`} />
         <meta property="og:title" content={`Projects | ${siteTitle}`} />
@@ -21,7 +22,7 @@ const Projects = (): JSX.Element => {
         {
           PROJECT_LIST.map(project => (
             <div className="col-sm-12 col-md-6" key={project.link}>
-              <Card title={project.name} img={project.image} click={() => window.open(project.link, '_blank')}>
+              <Card title={project.name} img={project.image} alt={project.name} click={() => window.open(project.link, '_blank')}>
                 {project.description}
               </Card>
             </div>

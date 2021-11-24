@@ -10,7 +10,7 @@
   "dependencies": {
     "@types/highlightjs": "^9.12.2",
     "@types/marked": "^4.0.1",
-    "eureka-ui": "github:prajapati-parth/eureka-ui#0.0.19",
+    "eureka-ui": "github:prajapati-parth/eureka-ui#0.0.20",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.3.1",
     "marked": "^4.0.4",

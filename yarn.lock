@@ -1135,9 +1135,9 @@ etag@1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
 
-"eureka-ui@github:prajapati-parth/eureka-ui#0.0.19":
-  version "0.0.19"
-  resolved "https://codeload.github.com/prajapati-parth/eureka-ui/tar.gz/134741881f1027aac2d77058cbd77a949ca10ed6"
+"eureka-ui@github:prajapati-parth/eureka-ui#0.0.20":
+  version "0.0.20"
+  resolved "https://codeload.github.com/prajapati-parth/eureka-ui/tar.gz/1fe4c07579521ebee9b8c4ec5fe5dc915a26e5c2"
   dependencies:
     prop-types "^15.6.1"
     react "^16.2.0"
