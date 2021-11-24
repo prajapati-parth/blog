@@ -39,10 +39,10 @@ export const SIDE_NAVIGATION_ITEMS: NavigationItem[] = [
   }
 ];
 
-export const SOCIAL_MEDIA_TYPE = {
-  TWITTER: 'twitter',
-  FACEBOOK: 'facebook',
-  LINKEDIN: 'linkedin',
+export const enum SOCIAL_MEDIA_TYPE {
+  TWITTER = 'twitter',
+  FACEBOOK = 'facebook',
+  LINKEDIN = 'linkedin',
 };
 
 export const PROJECT_LIST: ProjectType[] = [

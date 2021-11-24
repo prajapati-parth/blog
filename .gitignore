@@ -37,3 +37,5 @@ yarn-error.log*
 *.tsbuildinfo
 
 sitemap.xml.tsx
+public/sw.js.map
+public/workbox-*.js.map

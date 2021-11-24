@@ -1,0 +1,23 @@
+{
+  "name":"Parth Prajapati",
+  "short_name":"Parth Blog",
+  "description":"The blog of Parth Prajapati",
+  "homepage_url":"https://www.parthp.dev",
+  "start_url":"/blog",
+  "scope":"/blog",
+  "background_color":"#fff",
+  "theme_color":"#0EB9AF",
+  "display":"standalone",
+  "icons":[
+    {
+      "src":"/img/android-chrome-192x192.png",
+      "sizes":"192x192",
+      "type":"image/png"
+    },
+    {
+      "src":"/img/android-chrome-512x512.png",
+      "sizes":"512x512",
+      "type":"image/png"
+    }
+  ]
+}

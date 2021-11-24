@@ -48,7 +48,6 @@ const BlogPost = (props: BlogPostProps): JSX.Element => {
   const {
     title, excerpt, path, htmlContent, next,
   } = props;
-  const { FACEBOOK, TWITTER, LINKEDIN } = SOCIAL_MEDIA_TYPE;
 
   const getUrl = (path: string): string => `https://parthp.dev/${path}`;
 
@@ -84,7 +83,9 @@ const BlogPost = (props: BlogPostProps): JSX.Element => {
               <SocialMediaShare
                 title={title}
                 url={getUrl(path)}
-                type={[TWITTER, LINKEDIN, FACEBOOK]}
+                type={[
+                  SOCIAL_MEDIA_TYPE.TWITTER, SOCIAL_MEDIA_TYPE.LINKEDIN, SOCIAL_MEDIA_TYPE.FACEBOOK
+                ]}
               />
             </div>
           </div>

@@ -6,6 +6,9 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta name="google-site-verification" content="r7ZDK-XF9PZ0QUzLrGPJE3WVGbdxywDDPaxCzdDCxiA" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="apple-touch-icon" href="/img/apple-touch-icon.png"></link>
+          <meta name="theme-color" content="#0EB9AF" />
           <link rel="icon" href="/img/favicon.ico" />
           <link
             rel="stylesheet"
