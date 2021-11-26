@@ -30,7 +30,7 @@ mkdir hello-world
 cd hello-world
 npm init -y
 ```
-Just in case you do not want the defualt initialization, use `npm init` skipping `-y` option.
+Just in case you do not want the default initialization, use `npm init` skipping `-y` option.
 
 That’s it! You have successfully initialized npm and we are now ready to add React.
 

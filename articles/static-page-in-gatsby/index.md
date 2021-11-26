@@ -25,16 +25,16 @@ Let’s take a deeper look at that in action by creating a static page from a ma
 # Create a basic hello world starter using gatsby cli
 1. Download and install the gatsby-cli globally
 ```bash
-    npm install gatsby-cli -g
+npm install gatsby-cli -g
 ```
 2. Initiate a hello world starter
 ```bash
-    gatsby new static-page https://github.com/gatsbyjs/gatsby-starter-hello-world
+gatsby new static-page https://github.com/gatsbyjs/gatsby-starter-hello-world
 ```
 3. Change the directory and run the project
 ```bash
-    cd static-page
-    npm start
+cd static-page
+npm start
 ```
 4. At this point you’ll be able to see a page with “Hello world!” in your browser by navigating to <a target="_blank" href="http://localhost:8000">http://localhost:8000</a>
 
@@ -47,21 +47,21 @@ To read data from the files in your local system, we’ll be adding a plugin cal
 
 1. Install gatsby-source-filesystem
 ```bash
-    yarn add gatsby-source-filesystem --save
+yarn add gatsby-source-filesystem --save
 ```
 2. Configure the use of plugin in `gatsby-config.js`. If the file is not present, you can create one at the root of the project, Gatsby would read this file to load the set of plugins listed in the `plugins` array. Your gatsby-config.js should look something like this:
 ```js
-    module.exports = {
-      plugins: [
-        {
-          resolve: `gatsby-source-filesystem`,
-          options: {
-            path: `${__dirname}/src/static-pages`,
-            name: "markdown-pages",
-          }
-        }
-      ]
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/static-pages`,
+        name: "markdown-pages",
+      }
     }
+  ]
+}
 ```
 
 | | |
@@ -102,18 +102,18 @@ yarn add gatsby-transformer-remark --save
 ```
 2. Configure the use of this plugin in `gatsby-config.js`. Let’s go ahead and add one more item to the array of plugins in `gatsby-config.js`. Your `gatsby-config.js` should look something like this by now.
 ```js
-    module.exports = {
-      plugins: [
-        {
-          resolve: `gatsby-source-filesystem`,
-          options: {
-            path: `${__dirname}/src/static-pages`,
-            name: "markdown-pages",
-          }
-        },
-        'gatsby-transformer-remark'
-      ]
-    }
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/static-pages`,
+        name: "markdown-pages",
+      }
+    },
+    'gatsby-transformer-remark'
+  ]
+}
 ```
 
 We’ll not be configuring other options of this plugin and use the default ones. But I recommend checking out <a target="_blank" href="https://www.npmjs.com/package/gatsby-transformer-remark">the plugin documentation</a> if you need custom implementation.
