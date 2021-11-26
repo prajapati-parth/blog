@@ -62,6 +62,14 @@
     .gatsby-highlight {
       margin-bottom: 20px;
     }
+
+    code:not([class]) {
+      background: #d1c2ec;
+      border: 1px solid #673ab7;
+      color: #000;
+      padding: 0.1rem 0.3rem;
+      border-radius: 0.3em;
+    }
   }
 
   .language-text {

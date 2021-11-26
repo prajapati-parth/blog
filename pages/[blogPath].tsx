@@ -1,33 +1,15 @@
 import Head from 'next/head';
-import { marked } from 'marked';
 import { Card } from 'eureka-ui';
 import { GetStaticPaths } from 'next';
 import { useRouter } from 'next/router';
 import { ArrowRight } from 'react-feather';
-import hljs from 'highlight.js';
-import 'highlight.js/styles/atom-one-dark.css';
 
+import { getHtmlFromMarkdown } from '../utils';
+import { MoreSidebar } from '../components/MoreSidebar';
 import blogPathStyles from '../styles/blogPath.module.scss';
 import { getAllPostsPath, getPostDetails } from '../utils/blog';
-import { siteTitle, siteUrl, SOCIAL_MEDIA_TYPE, twitterHandle } from '../utils/constants';
-import { MoreSidebar } from '../components/MoreSidebar';
 import { SocialMediaShare } from '../components/SocialMediaShare';
-
-marked.setOptions({
-  renderer: new marked.Renderer(),
-  highlight: (code, lang) => {
-    const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-    return hljs.highlight(code, { language }).value;
-  },
-  langPrefix: 'hljs language-', // highlight.js css expects a top-level 'hljs' class.
-  pedantic: false,
-  gfm: true,
-  breaks: false,
-  sanitize: false,
-  smartLists: true,
-  smartypants: false,
-  xhtml: false
-});
+import { siteTitle, siteUrl, SOCIAL_MEDIA_TYPE, twitterHandle } from '../utils/constants';
 
 type BlogPostProps = {
   title: string,
@@ -61,6 +43,8 @@ const BlogPost = (props: BlogPostProps): JSX.Element => {
         <meta property="og:type" content="article" />
         <meta property="og:description" content={excerpt} />
         <meta property="og:url" content={`${siteUrl}/${path}`} />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
       </Head>
 
       <div className="row">
@@ -72,7 +56,7 @@ const BlogPost = (props: BlogPostProps): JSX.Element => {
               </div>
               <hr />
               <div>
-                <div dangerouslySetInnerHTML={{ __html: marked.parse(htmlContent || '') }} />
+                <div dangerouslySetInnerHTML={{ __html: getHtmlFromMarkdown(htmlContent || '') }} />
               </div>
             </div>
           </div>
