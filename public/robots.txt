@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.parthp.dev/sitemap.xml
-Host: https://www.parthp.dev
+Sitemap: https://www.parth.netlify.app/sitemap.xml
+Host: https://www.parth.netlify.app

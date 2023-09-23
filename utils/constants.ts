@@ -17,7 +17,7 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
 
 export const siteTitle = 'Parth Prajapati';
 export const twitterHandle = 'iam_daparth';
-export const siteUrl = 'https://www.parthp.dev';
+export const siteUrl = 'https://parth.netlify.app';
 export const siteDescription = 'The blog of Parth Prajapati';
 
 export const SIDE_NAVIGATION_ITEMS: NavigationItem[] = [
@@ -74,6 +74,6 @@ export const PROJECT_LIST: ProjectType[] = [
     name: "Eureka UI",
     image: "https://ik.imagekit.io/pimages/blog/projects/Eureka_UI_E2e3BNXpc.png?updatedAt=1637766315455",
     description: "Component design system for this website",
-    link: "http://eurekaui.parthp.dev/"
+    link: "http://eurekaui.netlify.app/"
   },
 ];

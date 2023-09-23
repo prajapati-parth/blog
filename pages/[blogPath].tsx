@@ -31,7 +31,7 @@ const BlogPost = (props: BlogPostProps): JSX.Element => {
     title, excerpt, path, htmlContent, next,
   } = props;
 
-  const getUrl = (path: string): string => `https://parthp.dev/${path}`;
+  const getUrl = (path: string): string => `https://parth.netlify.app/${path}`;
 
   return (
     <div className="container">

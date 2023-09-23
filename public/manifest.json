@@ -2,7 +2,7 @@
   "name":"Parth Prajapati",
   "short_name":"Parth Blog",
   "description":"The blog of Parth Prajapati",
-  "homepage_url":"https://www.parthp.dev",
+  "homepage_url":"https://www.parth.netlify.app",
   "start_url":"/blog",
   "scope":"/blog",
   "background_color":"#fff",

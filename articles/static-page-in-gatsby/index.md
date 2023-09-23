@@ -78,7 +78,7 @@ path: "/my-first-static-page"
 date: "2020-01-05"
 title: "Creating a static page to learn Gatsby"
 ---
-Hello, this my first gatsby static page by reading <a target="_blank" href="https://parthp.dev/static-page-in-gatsby">this</a> blog.
+Hello, this my first gatsby static page by reading <a target="_blank" href="https://parth.netlify.app/static-page-in-gatsby">this</a> blog.
 ```
 
 Any markdown syntax in this file, will be converted to html to be displayed on a webpage. Gatsby has a plugin right for that.
