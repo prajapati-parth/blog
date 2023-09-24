@@ -8,7 +8,7 @@ import AboutContentStyles from './AboutContent.module.scss';
 const AboutContent = (): JSX.Element => {
   return (
     <div className={AboutContentStyles.profileContentContainer}>
-      <Card title="About">
+      <Card>
         <div>
           <div className={AboutContentStyles.bodySection}>
             <p>
