@@ -11,7 +11,10 @@ previous:
   - Joining Aera Technology
   - /joining-aera
   - blueGradient
-next: ""
+next:
+  - Debouncing like a pro using Vanilla JS
+  - /debounce-like-a-pro-using-vanilla-js
+  - pinkGradient
 excerpt: "Game development is something that uses Math. A good amount of Math. I've been doing web development for around more than 8 years now, where technical and domain challenges have been a part of my daily work. But solving Math problems isn't something"
 ---
 
