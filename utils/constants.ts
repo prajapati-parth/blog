@@ -22,6 +22,14 @@ export const siteDescription = 'The blog of Parth Prajapati';
 
 export const SIDE_NAVIGATION_ITEMS: NavigationItem[] = [
   {
+    label: "Debouncing like a pro using Vanilla JS",
+    linkTo: "/debounce-like-a-pro-using-vanilla-js"
+  },
+  {
+    label: "Creating a game using Vanilla JavaScript",
+    linkTo: "/game-using-vanilla-javascript"
+  },
+  {
     label: "Joining Aera Technology",
     linkTo: "/joining-aera"
   },
@@ -29,14 +37,6 @@ export const SIDE_NAVIGATION_ITEMS: NavigationItem[] = [
     label: "Creating a static page in Gatsby with filesystem data",
     linkTo: "/static-page-in-gatsby"
   },
-  {
-    label: "Minimal React vs Create React App",
-    linkTo: "/minimal-react"
-  },
-  {
-    label: "Creating a Hello World React application from scratch",
-    linkTo: "/react-hello-world"
-  }
 ];
 
 export const enum SOCIAL_MEDIA_TYPE {
