@@ -12,7 +12,7 @@ previous:
   - /game-using-vanilla-javascript
   - greenGradient
 next: ""
-excerpt: "Game development is something that uses Math. A good amount of Math. I've been doing web development for around more than 8 years now, where technical and domain challenges have been a part of my daily work. But solving Math problems isn't something"
+excerpt: "Let’s learn about debouncing today. A fairly simple concept that can improve the performance of your application but is often ignored."
 ---
 
 Let’s learn about debouncing today. A fairly simple concept that can improve the performance of your application but is often ignored.

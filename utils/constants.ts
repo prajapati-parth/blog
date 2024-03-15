@@ -50,7 +50,7 @@ export const PROJECT_LIST: ProjectType[] = [
     name: "Education Lessons",
     image: "https://ik.imagekit.io/pimages/blog/projects/EL_v5EZ0bf26NV.png?updatedAt=1637766044521",
     description: "Educational start up to help engineering students with video lectures",
-    link: "https://educationlessons.co.in"
+    link: "https://el-next.netlify.app"
   },
   {
     name: "Slave Bot",
